@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "swc --strip-leading-paths --delete-dir-on-start -d lib src && tsc",
-    "dev": "nodemon -x tsx lib/index.js",
+    "dev": "nodemon -x tsx src/index.ts",
     "format": "pnpm prettier . --write",
     "lint": "pnpm eslint .",
     "predeploy": "pnpm lint && pnpm format && pnpm build && pnpm test",
